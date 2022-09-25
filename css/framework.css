@@ -1,0 +1,206 @@
+:root
+{
+    --blue-color:#0075ff;
+    --blue-alt-color:#0d69d5;
+    --orange-color:#f59e0b;
+    --green-color:#22c55e;
+    --red-color:#f44335;
+    --grey-color:#888;
+    --alt-color1:hsl(213deg 100% 90%);
+    --alt-color2:hsl(38deg 92% 90%);
+    --alt-color3:hsl(143deg 57% 89%);
+}
+/* Stat Box */
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.d-grid
+{
+    display: grid;
+}
+
+@media(max-width:767px)
+{
+    .block-mobile{
+        display: block;
+    }
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+/* End Box */
+
+/* Width & height */
+.w-full
+{
+    width: 100%;
+}
+.h-60
+{
+    height: 60px;
+}
+
+.h-100
+{
+    height: 100px;
+}
+
+
+
+/* Start Padding & Marging */
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.p-20
+{
+    padding:20px;
+}
+.p-30{
+    padding: 30px;
+}
+.m-0{
+    margin: 0;
+}
+.m-20{
+    margin: 20px;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mb-5
+{
+    margin-bottom: 5px;
+}
+.mb-20
+{
+    margin-bottom: 20px;
+}
+/* End Padding & Marging */
+
+
+/* Start Color */
+.bg-white{
+    background-color: white;
+}
+
+.c-black{
+    color: black;
+}
+
+/* End Color */
+
+
+/* Start Position */
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+/* End Position */
+
+
+/* Start Font */
+.f-12
+{
+    font-size: 12px;
+}
+.f-13
+{
+    font-size: 13px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-15{
+    font-size: 15;
+}
+.txt-c
+{
+    text-align: center;
+}
+
+@media(max-width:767px)
+{
+    .txt-c-mobile
+    {
+        text-align: center;
+    }
+}
+/* End Font */
+
+/* Start Components */
+.between-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.but-shape 
+{
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+/* End Components */
+
+/* Start Border */
+.rad-6{
+    border-radius: 6px;
+}
+.rad-10{
+    border-radius: 10px;
+}
+/* End Border */
+
+/* Color bg */
+.alt-1
+{
+    background-color: var(--alt-color1);
+}
+.alt-2
+{
+    background-color: var(--alt-color2);
+}
+.alt-3
+{
+    background-color: var(--alt-color3);
+}
+
+.red{
+    color: var(--red-color);
+}
+.bule{
+    color: var(--blue-color);
+}
+.orange{
+    color: var(--orange-color);
+}
+.green{
+    color: var(--green-color);
+}
+
+.c-grry
+{
+    color: var(--grey-color);
+}
+
+.bg-eee
+{
+    background-color: #eee;
+}
