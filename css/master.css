@@ -577,4 +577,278 @@ ul
 
 /* End Task */
 
+/* Start Latest Uploads */
+.latest-uploads ul li:not(:last-child)
+{
+    border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li img{
+    width: 40px;
+    height:40px
+}
+/* End Latest Uploads */
 
+/* Strt Last Project */
+.last-project ul::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 95%;
+    width: 3px;
+    background-color: var(--blue-color);
+}
+.last-project ul li::after
+{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border:2px solid white;
+    outline: 2px solid var(--blue-color);
+    z-index: 1;
+}
+.last-project ul li.done::after
+{
+    background-color: var(--blue-color);
+}
+.last-project ul li.current::after
+{
+    animation: back linear 3s infinite;
+}
+.last-project .rocket
+{
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    filter: grayscale(0.3);
+}
+
+@media (max-width:767px)
+{
+    .last-project .rocket {
+        display: none;
+    }
+}
+/* End Last Project */
+
+/* Start Reminders */
+.reminders ul li::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 2px;
+}
+.reminders ul li::after
+{
+    content: '';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:-25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.reminders ul li.l-blue::before
+{
+    background-color: var(--blue-color);
+}
+.reminders ul li.l-blue::after
+{
+    background-color: var(--blue-color);
+}
+.reminders ul li.l-green::before
+{
+    background-color: var(--green-color);
+}
+.reminders ul li.l-green::after
+{
+    background-color: var(--green-color);
+}
+.reminders ul li.l-orange::before
+{
+    background-color: var(--orange-color);
+}
+.reminders ul li.l-orange::after
+{
+    background-color: var(--orange-color);
+}
+.reminders ul li.l-red::before
+{
+    background-color: var(--red-color);
+}
+.reminders ul li.l-red::after
+{
+    background-color: var(--red-color);
+}
+/* End Reminders */
+/* Start Latest Post */
+.latest-post .head img {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.latest-post .info
+{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+/* End Latest Post */
+
+/* Start Social Media Stats */
+.social-media div.twitter
+{
+    background-color: #d2ecfc;
+}
+.social-media div.twitter span{
+    color: #35abf5;
+}
+
+.social-media div.twitter .logo i
+{   font-size: 30px;
+    color: white;
+    background-color: #55ACEE;
+}
+.social-media div.twitter .num {
+    color: white;
+    font-size: 13px;
+    background-color: #1da1f2;
+    margin-right: 10px;
+}
+/*  */
+.social-media div.faceboox
+{
+    background-color: #d1e4fc;
+}
+.social-media div.faceboox span{
+    color: #3ba4f2;
+}
+
+.social-media div.faceboox .logo i
+{   font-size: 30px;
+    color: white;
+    background-color: #1877f2;
+}
+.social-media div.faceboox .num {
+    color: white;
+    font-size: 13px;
+    background-color: #1877f2;
+    margin-right: 10px;
+}
+
+.social-media div.youtube
+{
+    background-color: #fcc;
+}
+.social-media div.youtube span{
+    color: #ff2523;
+}
+
+.social-media div.youtube .logo i
+{   font-size: 30px;
+    color: white;
+    background-color: #f00;
+}
+.social-media div.youtube .num {
+    color: white;
+    font-size: 13px;
+    background-color: #f00;
+    margin-right: 10px;
+}
+
+.social-media div.linkdin
+{
+    background-color: #cce4f0;
+}
+.social-media div.linkdin span{
+    color: #2c84b8;
+}
+
+.social-media div.linkdin .logo i
+{   font-size: 30px;
+    color: white;
+    background-color: #0077b5;
+}
+.social-media div.linkdin .num {
+    color: white;
+    font-size: 13px;
+    background-color: #0077b5;
+    margin-right: 10px;
+}
+.social-media .num
+{
+    cursor: pointer;
+}
+/* End Social Media Stats */
+
+/* Start Projects Table */
+.project .responsive-table
+{
+    overflow-x: auto;
+}
+.project table
+{
+    min-width: 1000px;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+.project thead td {
+    background-color: #eee;
+    font-weight: bold;
+}
+.project table td {
+    padding: 15px;
+}
+.project tbody td {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: 0.3;
+}
+.project tbody tr:hover td {
+    background-color: #faf7f7;
+}
+.project table tbody tr td:last-child
+{
+    border-right: 1px solid #eee;
+}
+.project table img 
+{
+    width: 32px;
+    height:32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+.project table img:not(:first-child)
+{
+    margin-left: -20px;
+}
+.project .lable
+{
+    font-size: 13px;
+}
+
+
+/* End Projects Table */
+/* Start Animation */
+@keyframes back{
+    0% {
+        background-color: var(--blue-color);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+/* End Animation */
