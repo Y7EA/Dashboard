@@ -98,6 +98,9 @@
 .m-0{
     margin: 0;
 }
+.m-15{
+    margin: 15px;
+}
 .m-20{
     margin: 20px;
 }
@@ -122,12 +125,18 @@
 .mr-10{
     margin-right: 10px;
 }
+.mb-0{
+    margin-bottom: 0;
+}
 .mb-5
 {
     margin-bottom: 5px;
 }
 .mb-10{
     margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
 }
 .mb-20
 {
@@ -136,6 +145,10 @@
 .mb-25
 {
     margin-bottom: 25px;
+}
+.mb-30
+{
+    margin-bottom: 30px;
 }
 /* End Padding & Marging */
 
@@ -182,6 +195,9 @@
 .f-15{
     font-size: 15px;
 }
+.f-17{
+    font-size:17px;
+}
 .txt-c
 {
     text-align: center;
@@ -219,6 +235,12 @@
 .rad-10{
     border-radius: 10px;
 }
+.b-none{
+    border:none;
+}
+.border-ccc{
+    border:1px solid #ccc;
+}
 /* End Border */
 
 /* Color bg */
@@ -247,7 +269,9 @@
 .green{
     color: var(--green-color);
 }
-
+.c-blue{
+    color: var(--blue-color);
+}
 .c-grry
 {
     color: var(--grey-color);
@@ -268,3 +292,7 @@
 {
     color: white;
 }
+.bg-ccc{
+    background-color: #ccc;
+}
+

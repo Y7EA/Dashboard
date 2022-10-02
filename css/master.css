@@ -223,7 +223,7 @@ ul
 @media(max-width:767px)
 {
     .wrapper{
-        grid-template-columns: repeat(auto-fill ,minmax(200px,1fr));
+        grid-template-columns:minmax(200px,1fr);
         margin-left: 10px;
         margin-right: 10px;
         gap: 10px;
@@ -839,8 +839,231 @@ ul
     font-size: 13px;
 }
 
-
 /* End Projects Table */
+/* Start Setting Page */
+.toggel-checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggel-switch{
+    position: relative;
+    width:78px;
+    height: 32px;
+    background-color: var(--red-color);
+    border-radius:15px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.toggel-switch::before
+{
+    font-family: "Font Awesome 6 Free";
+    content:'\f00d';
+    font-weight: 900;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left:4px;
+    top:4px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition:0.3s;
+    color:var(--red-color)
+}
+.toggel-checkbox:checked + .toggel-switch
+{
+    background-color: var(--blue-color);
+}
+.toggel-checkbox:checked + .toggel-switch::before
+{
+    left:50px;
+    content:'\f00c';
+    color: var(--blue-color);
+}
+
+.settings-page{
+    grid-template-columns: repeat(auto-fill ,minmax(500px,1fr));
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 20px
+}
+@media (max-width:767px)
+{
+    .settings-page
+    {
+        grid-template-columns:minmax(100px,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.settings-page .message-content
+{
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+    border-radius:6px;
+    color: #ccc;
+    border-color: #ccc;
+}
+.settings-page .email{
+    display: inline-block;
+    width: calc(100% - 80px);
+    background-color: #f0f4f8;
+}
+/* End Setting Page */
+/* Start Security Info  */
+.security-info .factor
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 35px;
+}
+/* End Security Info  */
+
+/* Start Social Info */
+.social-info .info {
+    background-color: #f6f6f6;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+.social-info .info i {
+    color: #888888;
+    border-right: 2px solid #eee;
+}
+.social-info .info span
+{
+    color: #888888;
+}
+/* End Social Info */
+
+/* Start Widgets Controle */
+.widgets-controle .control input[type="checkbox"] {
+    appearance: none;
+}
+.widgets-controle .control label{
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.widgets-controle .control label::before,
+.widgets-controle .control label::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:-20px;
+    width: 14px;
+    height: 14px;
+    margin-top: -9px;
+    border-radius: 4px;
+    transition:0.3s;
+
+
+}
+.widgets-controle .control label::before
+{    
+    background: white;
+    border: 1px solid var(--grey-color);
+}
+.widgets-controle .control label:hover:before
+{
+    border-color: var(--blue-alt-color);
+}
+.widgets-controle .control label::after
+{   
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 13px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--blue-color);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+}
+.widgets-controle .control input[type="checkbox"]:checked + label::after
+{
+    transform: scale(1);
+}
+/* End Widgets Controle */
+
+/* Start Backup Manager */
+.backup-manager input[type="radio"]
+{   
+    appearance: none;
+}   
+.backup-manager .date label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.backup-manager .date label::before
+{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:0;
+    width:18px;
+    height: 18px;
+    border:2px solid var(--grey-color);
+    border-radius: 50%;
+    margin-top:-11px;
+}
+.backup-manager .date label::after
+{
+    content: '';
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue-color);
+    border-radius: 50%;;
+    transition: 0.3;
+    transform: scale(0);
+}
+.backup-manager .date input[type="radio"]:checked + label::before
+{
+    border-color: var(--blue-color);
+}
+.backup-manager .date input[type="radio"]:checked + label::after
+{
+    transform: scale(1);
+}
+
+.backup-manager .servers{
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+@media(max-width:767px)
+{
+    .backup-manager .servers
+    {
+        flex-wrap: wrap;
+    }
+}
+.backup-manager .servers .server{
+    border:2px solid #eee;
+    position: relative;
+}
+.backup-manager .servers .server label
+{
+    cursor:pointer;
+}
+.backup-manager .servers input[type="radio"]:checked + .server
+{
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/* End Backup Manager */
+
+
 /* Start Animation */
 @keyframes back{
     0% {
